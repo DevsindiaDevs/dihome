@@ -2,13 +2,13 @@
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-6">
+    <footer className=" text-white py-6">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center gap-4">
           {/* Logo */}
-          <div className="w-40 h-12 relative">
+          <div className="w-10 h-10 relative">
             <img
-              src="/placeholder.svg?height=48&width=160"
+              src="/logo2.png"
               alt="Devs India Logo"
               className="object-contain"
             />

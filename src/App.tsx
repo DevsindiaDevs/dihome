@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React from "react";
 import { AuroraBackground } from "./components/ui/aurora-background";
 import Footer from "./components/Footer";
 export function AuroraBackgroundDemo() {
@@ -24,12 +23,20 @@ export function AuroraBackgroundDemo() {
         <div className="font-extralight text-base md:text-4xl text-neutral-200 py-4">
           Exciting updates are on the way.
         </div>
-        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-6 py-3 text-lg font-medium">
+        <button className="bg-black dark:bg-white rounded-full w-fit text-white dark:text-black px-6 py-3 text-lg font-medium"
+        onClick={()=>{
+          window.open("mailto:founder.devsindiaorg@gmail.com")
+        }}
+        >
           Contact Us
         </button>
       </motion.div>
+      <div className="w-full absolute bottom-0">
+      <Footer />
+      </div>
+      
     </AuroraBackground>
-    <Footer />
+    
     </>
   );
 }
